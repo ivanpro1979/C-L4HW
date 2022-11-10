@@ -8,22 +8,10 @@ int numA = (Convert.ToInt32(Console.ReadLine()));
 Console.Write("Задайте степень в которую нужно возвести: ");
 int numB = (Convert.ToInt32(Console.ReadLine()));
 int b = 1;
-double PowNum = 1.0;
-if (numB >= 0)
-{
-    while (b < numB + 1)
+int PowNum = 1;
+while (b < numB + 1)
    {
        PowNum = Convert.ToInt32((Math.Pow(numA,b)));
        b ++;
    }
 Console.Write(PowNum);
-}
-else 
-{
-    while (b < (-numB) +1)
-   {
-       PowNum = Convert.ToDouble(1 / (Convert.ToInt32((Math.Pow(numA,b)))));
-       b ++;
-   }
-Console.Write(PowNum);   
-}
