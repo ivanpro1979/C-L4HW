@@ -10,8 +10,8 @@ int numB = (Convert.ToInt32(Console.ReadLine()));
 int b = 1;
 int PowNum = 1;
 while (b < numB + 1)
-   {
-       PowNum = Convert.ToInt32((Math.Pow(numA,b)));
-       b ++;
-   }
+{
+    PowNum = Convert.ToInt32((Math.Pow(numA, b)));
+    b++;
+}
 Console.Write(PowNum);
